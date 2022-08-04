@@ -1,18 +1,29 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const AdminPage = () => {
-    const [data, setData] = React.useState(null);
-
-    React.useEffect(() => {
-        fetch("/api")
-            .then((res) => res.json())
-            .then((data) => setData(data.message));
-    }, []);
-
     return (
         <>
-            <div className="App">
-                    <p style={{ color: "lighrgreen", fontSize: 20 }}>{!data ? "Loading..." : data}</p>
+            <div className="main-div" style={{ padding: '100px' }}>
+                <h1>ADMIN PANEL</h1>
+                <br />
+                <li> <Link to="/"> Home </Link></li>
+                <br />
+                <li> <Link to="/posts"> All Posts </Link></li>
+                <br />
+                <li> <Link to="/login"> Login </Link></li>
+                <br />
+                <li> <Link to="/register"> Register </Link></li>
+                <br />
+                <li> <Link to="/profile"> Profile </Link></li>
+                <br />
+                <li> <Link to="/post/:id"> Single Post </Link></li>
+                <br />
+                <li> <Link to="/admin"> Write Blog </Link></li>
+                <br />
+                <li> <Link to="/admin"> Edit Blog </Link></li>
+                <br />
+                <li> <Link to="/admin"> Edit Profile </Link></li>
             </div>
         </>
     );
