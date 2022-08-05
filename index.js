@@ -10,10 +10,6 @@ const multer = require("multer");
 const path = require("path");
 const PORT = 5000;
 
-app.get("/",(req,res)=>{
-    res.send("welcome")
-})
-
 dotenv.config();
 app.use(express.json());
 app.use("/images", express.static(path.join(__dirname, "/images")));
