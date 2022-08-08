@@ -2,8 +2,8 @@ POST http://localhost:5000/api/auth/register HTTP/1.1
 content-type: application/json
 
 {
-  "username":"demo2",
-  "email": "demo2@gmail.com",
+  "username":"demo23",
+  "email": "demo22@gmail.com",
   "password":"123456"
 }
 
@@ -13,8 +13,8 @@ POST http://localhost:5000/api/auth/login HTTP/1.1
 content-type: application/json
 
 {
-  "username":"demo",
-  "password":"123456"
+  "username":"goku1",
+  "password":"123"
 }
 
 ####
@@ -23,25 +23,25 @@ POST http://localhost:5000/api/posts/ HTTP/1.1
 content-type: application/json
 
 {
-  "username":"demo2",
-  "title":"blog demo 12",
+  "username":"demo23",
+  "title":"blog test demddo 12",
   "desc":"demo blog dec goes here..."
 }
 
 ####
 
-POST https://mernblogu.herokuapp.com/auth/register HTTP/1.1
+POST https://mernblogu.herokuapp.com/api/auth/register HTTP/1.1
 content-type: application/json
 
 {
-  "username":"demo",
-  "email": "demo@gmail.com",
+  "username":"de14",
+  "email": "dem4os4@gmail.com",
   "password":"123456"
 }
 
 ####
 
-POST https://mernblogu.herokuapp.com/auth/login HTTP/1.1
+POST https://mernblogu.herokuapp.com/api/auth/login HTTP/1.1
 content-type: application/json
 
 {
@@ -51,7 +51,7 @@ content-type: application/json
 
 ####
 
-POST https://mernblogu.herokuapp.com/posts/ HTTP/1.1
+POST https://mernblogu.herokuapp.com/api/posts/ HTTP/1.1
 content-type: application/json
 
 {
